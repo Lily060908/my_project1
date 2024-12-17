@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial,sans-serif;
+            background-image: url('backgroung.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        nav ul li {
+            display: inline;
+            padding: 10px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: aqua;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: darkblue;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label,input,textarea {
+            display: block;
+            margin: 10px 0;
+        }
+        button {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: poinet;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>Личный портфолио </h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Про меня</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Связаться</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about">
+            <h2>Про меня</h2>
+            <p>Здравствуйте! Я <strong>Лили(Lily)</strong>, я программистка.Занимаюсь Веб созданием. У меня пока что нет опыта создании больших проектов но я предуспею во многих вещах.</p>
+
+        </section>
+        <section id="projects">
+            <h2>Проекты</h2>
+            <article>
+                <h3>Проект по созданию веб</h3>
+                <p>Этот проект <em>HTML,CSS</em> и <em>JavaScript</em> были использованы.</p>
+                <ul>
+                    <li><a href="#">Портфолио страница</a></li>
+                    <li><a href="#">Блог платформа</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Проект по мобиль созданию</h3>
+                <p>Я хотел поработать над созданием приложений, работающих на платформах Android и iOS, и в результате получилось</p>
+            
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Связаться</h2>
+            <form action="#">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" required><br>
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Отправить</button>
+            </form>
+
+        </section>
+        <footer>
+            <p>&copy;2024 Lily[panda education campus]</p>
+        </footer>
+    </body>
+</body>
+</html>
